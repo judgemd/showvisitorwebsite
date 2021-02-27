@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 body {
-    background-image: url("background.png");
+    background-image: url("../assets/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
