@@ -24,5 +24,10 @@ echo $outputs[0];
               </div>
            </div>
         </div>
+
+        <form action="system/insert.php" method="post">
+      <input pattern="\d*" type="text" placeholder="Enter the Score" name="visitornumber" required>
+      <button type="submit">Save Score</button>
+      </form>
     </body>
 </html>
