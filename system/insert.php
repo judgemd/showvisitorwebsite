@@ -9,7 +9,7 @@
 		$maxnumber = $outputs["id"];
 		$number = $maxnumber + 1;
 
-    $cp = $_POST["score"];
+    $cp = $_POST["visitornumber"];
 
             $sql = "INSERT INTO visitors (id, visitornumber) VALUES ($number, '$cp')";
 
