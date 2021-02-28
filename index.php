@@ -5,8 +5,6 @@ include("./system/connection.php");
 $lastvisitornumber = $conn -> query("SELECT * FROM visitors ORDER BY visitornumber DESC LIMIT 1");
 $outputs = $lastvisitornumber->fetch_array();
 
-echo $outputs[0];
-
 ?>
 <html>
     <head>
@@ -24,11 +22,22 @@ echo $outputs[0];
               </div>
            </div>
         </div>
-<!--
-        <form action="system/insert.php" method="post">
-      <input pattern="\d*" type="text" placeholder="Enter the Score" name="visitornumber" required>
-      <button type="submit">Save Score</button>
       </form>
-    -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action="system/update.php" method="post">
+      <input pattern="\d*" type="text" placeholder="Enter the Visitor" name="updatenumber" required>
+      <button type="submit">Save Visitors</button>
+    </form>
+
     </body>
 </html>
