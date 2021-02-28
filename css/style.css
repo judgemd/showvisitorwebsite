@@ -22,13 +22,6 @@ body {
     text-align: center;
     font-size:50px;
 }
-.one {
-    display: inline-block;
-    height: 200px;
-    width: 300px;
-    margin: 10px;
-    color: black;
-}
 #circles {
     height: 300px;
     width: 960px;
@@ -52,7 +45,7 @@ body {
     margin-left: 130px;
 }
 .day {
-    margin-left: 90px;
+    margin-left: 70px;
     margin-top: 90px;
     font-size: 70px;
     float: left;
