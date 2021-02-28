@@ -20,14 +20,15 @@ echo $outputs[0];
                                   <h3 id = "text2">Total number of visitors</h3></div>
             <div id = "circles">
               <div class = "one" id="second">
-                <h3 class = "day">31</h3>
+                <h3 class = "day"><?php echo $outputs[1]; ?></h3>
               </div>
            </div>
         </div>
-
+<!--
         <form action="system/insert.php" method="post">
       <input pattern="\d*" type="text" placeholder="Enter the Score" name="visitornumber" required>
       <button type="submit">Save Score</button>
       </form>
+    -->
     </body>
 </html>
