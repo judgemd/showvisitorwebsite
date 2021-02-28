@@ -1,25 +1,25 @@
 <?php
         include("connection.php");
 
-		$lastvisitornumber = $conn -> query("SELECT * FROM visitors ORDER BY visitors DESC LIMIT 1");
-		$outputs = $lastvisitornumber->fetch_array();
+        $lastvisitornumber = $conn -> query("SELECT * FROM visitors ORDER BY visitornumber DESC LIMIT 1");
+    	$outputs = $lastvisitornumber->fetch_array();
 
-		echo $outputs[0];
+		$lastvisitornumber = $outputs["visitornumber"];
 
-        $visitor = $_POST["changeparagraph"];
-        $id = $_POST["changeid"];
+        $visitor = $_POST["updatenumber"];
 
+        $lastvisitor = $lastvisitornumber + $visitor;
 
-        $sql = "UPDATE visitors  SET visitornumber = '$visitor' WHERE id = '$id' ";
+        $sql = "UPDATE visitors  SET visitornumber = '$lastvisitor' WHERE id = '3' ";
 
-    if ($conn->query($sql) === TRUE) {
+   if ($conn->query($sql) === TRUE) {
         echo "Succesfull UPDATE";
-        header("Location:../../index.php");
+        header("Location: ../index.php");
+
     } 
     else {
         echo "ERROR: " . $conn->error;
     }
-
 
 
 ?>
