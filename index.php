@@ -1,4 +1,13 @@
-<!DOCTYPE html> <?php?>
+<!DOCTYPE html> <?php
+
+include("./system/connection.php");
+
+$lastvisitornumber = $conn -> query("SELECT * FROM visitors ORDER BY visitornumber DESC LIMIT 1");
+$outputs = $lastvisitornumber->fetch_array();
+
+echo $outputs[0];
+
+?>
 <html>
     <head>
         <title></title>
