@@ -1,5 +1,5 @@
 <?php
-        include("./system/connection.php");
+        include("connection.php");
 
 		$lastvisitornumber = $conn -> query("SELECT * FROM visitors ORDER BY visitors DESC LIMIT 1");
 		$outputs = $lastvisitornumber->fetch_array();
