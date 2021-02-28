@@ -22,7 +22,6 @@ $outputs = $lastvisitornumber->fetch_array();
               </div>
            </div>
         </div>
-      </form>
     <br>
     <br>
     <br>
